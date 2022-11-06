@@ -1,0 +1,199 @@
+$Dark-Magenta: hsl(300, 43%, 22%);
+$Pink: hsl(333, 80%, 67%);
+
+// ### Neutral
+
+$Grayish-Magenta: hsl(303, 10%, 53%);
+$Light-Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+/*reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+//begin//
+body {
+  background-color: $White;
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left -100px top 10px, right 160px;
+
+  // background-image: ;
+  // background-position: right 160px;
+}
+
+main {
+  padding: 4rem;
+  padding-left: 8rem;
+  padding-top: 5rem;
+}
+
+header {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.left {
+  width: 50%;
+  padding-right: 12rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $Dark-Magenta;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+    color: $Grayish-Magenta;
+    font-weight: 700;
+  }
+}
+
+.right {
+  padding-top: 30px;
+}
+
+.contain {
+  padding: 15px;
+  width: 420px;
+  background-color: $Light-Magenta;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  img,
+  p {
+    display: inline-block;
+  }
+  p {
+    color: $Dark-Magenta;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  img {
+    margin-right: 5px;
+  }
+}
+
+.c-two {
+  margin-left: 50px;
+}
+
+.c-three {
+  margin-left: 100px;
+}
+
+.box-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .box {
+    background-color: $Dark-Magenta;
+    padding: 2rem;
+    margin-right: 30px;
+    border-radius: 10px;
+    padding-bottom: 3rem;
+    width: 350px;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.img-wrap {
+  img {
+    border-radius: 50%;
+    width: 40px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.name-wrap {
+  p {
+    color: $Pink;
+    font-size: 15px;
+  }
+  .name {
+    color: $White;
+    font-weight: 700;
+    line-height: 23px;
+  }
+}
+
+.comment {
+  color: $White;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+
+.b-two {
+  margin-top: 1.5rem;
+}
+.b-three {
+  margin-top: 3rem;
+}
+
+//media
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 1rem;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    padding-right: 0;
+
+    h1 {
+      font-size: 2rem;
+      margin: 1rem 3rem 1.5rem;
+      text-align: center;
+    }
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+  .contain {
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .c-two,
+  .c-three {
+    margin-left: auto;
+  }
+
+  .box-wrap {
+    flex-direction: column;
+
+    align-items: center;
+
+    .box {
+      margin-right: 0;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
